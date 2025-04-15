@@ -41,7 +41,7 @@
     --light: #f8f9fa;
     --dark: var(--gray-dark);
     
-    /* Breakpoint */
+    /* Breakpoint
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 828px;
@@ -92,7 +92,7 @@ img {
     overflow: clip;
 }
 
-/* Navbar Styles - Base selectors */
+/* Stili navbar */
 .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -101,12 +101,12 @@ img {
     list-style: none;
 }
 
-/* Topbar Structure */
+/* Struttura Topbar */
 .topbar {
     z-index: 1000;
 }
 
-/* Primo navbar row styling */
+/* Stile della prima riga navbar */
 .topbar .topbar-inner .navbar-site {
     background-color: var(--theme-color);
     color: var(--white);
@@ -114,7 +114,7 @@ img {
     position: relative;
 }
 
-/* Navbar positioning - usando selettori più compatti */
+/* Posizionamento navbar */
 .navbar-site-left,
 .navbar-site-right {
     position: absolute;
@@ -136,7 +136,7 @@ img {
     margin: 0 auto;
 }
 
-/* Navbar items styling */
+/* Stile degli elementi navbar */
 .navbar-site .navbar-nav > li {
     color: white;
     font-family: var(--font-family-sans-serif);
@@ -160,7 +160,7 @@ img {
     padding-left: 15px;
 }
 
-/* Navbar links */
+/* Collegamenti navbar */
 .navbar-site .navbar-nav > li a,
 .navbar-site .navbar-nav > li a:visited {
     font-size: 14px;
@@ -200,7 +200,7 @@ img {
     font-weight: bold;
 }
 
-/* Buttons */
+/* Pulsanti */
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -225,7 +225,7 @@ img {
     border-radius: .2rem;
 }
 
-/* Hover effects */
+/* Effetti hover */
 .navbar-site .navbar-nav > li a:hover, 
 .navbar-site .navbar-nav > li a:visited:hover {
     transform: scale(1.1);
@@ -236,20 +236,19 @@ img {
     transform: scale(1.4);
 }
 
-/* Add underline effect to left navbar links on hover */
+/* Aggiunta effetto sottolineatura ai collegamenti navbar sinistra al passaggio del mouse */
 .navbar-site .navbar-site-left .navbar-nav.navbar-left > li a.text:hover,
 .navbar-site .navbar-site-left .navbar-nav.navbar-left > li a.text:visited:hover {
     text-decoration: underline;
 }
 
-/* Second navbar row */
 .topbar .topbar-inner .navbar-site-secondrow {
     background-color: #031a34;
     transition: var(--transition-navbar);
 }
 
-/* Media queries - consolidate all display utilities */
-@media (min-width: var(--breakpoint-lg)) {
+/* Media queries */
+@media (min-width: 1110px) {
     .d-lg-flex {
         display: flex !important;
     }
@@ -259,7 +258,7 @@ img {
     }
 }
 
-@media (max-width: var(--breakpoint-lg)) {
+@media (max-width: 1110px) {
     .d-lg-none {
         display: flex !important;
     }
@@ -274,7 +273,7 @@ img {
     }
 }
 
-@media (min-width: var(--breakpoint-sm)) {
+@media (min-width: 576px) {
     .d-sm-none {
         display: none !important;
     }
@@ -284,7 +283,7 @@ img {
     }
 }
 
-@media (min-width: var(--breakpoint-md)) {
+@media (min-width: 828px) {
     :root {
         --vmargin: 30px;
     }
