@@ -500,7 +500,14 @@ a:visited:hover {
     .d-md-block {
         display: block !important;
     }
+
+    .d-md-none {
+        display: none !important;
+    }
     
+    .navbar-site-secondrow .edizione-digitale-link {
+        display: none !important;
+    }
 }
 
 /* Extra small screens - max-width: 575.98px */
