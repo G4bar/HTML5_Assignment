@@ -49,12 +49,6 @@
     --transition-navbar: all 0.5s cubic-bezier(0, 1, 0.5, 1);
 }
 
-@media (min-width: var(--breakpoint-md)) {
-    :root {
-        --vmargin: 30px;
-    }
-}
-
 body {
     margin: 0;
     font-family: var(--font-family-sans-serif);
@@ -505,9 +499,9 @@ a:visited:hover {
         display: none !important;
     }
     
-    .hot-topics-list{
+    /*.hot-topics-list{
         display: none !important;
-    }
+    }*/
 }
 
 @media (min-width: 828px) {
@@ -624,8 +618,14 @@ a:visited:hover {
     }
 }
 
-@media (min-width: var(--breakpoint-md)) {
+@media (min-width: 828px) {
     :root {
         --vmargin: 30px;
+    }
+}
+
+@media (max-width: 828px) {
+    :root {
+        --vmargin: 15px;
     }
 }
