@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- Stile personalizzato -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -426,7 +430,9 @@
         </div>
     </div>
 
+    <!-- Pagina principale -->
     <div class="container container-page">
+        <!-- Header -->
         <header class="site-header top-hmargins">
             <div class="header d-flex align-items-bottom">
                 <a class="weather mr-auto align-self-end align-items-baseline d-flex" href="#" cursorshover="true">
@@ -493,9 +499,11 @@
 
         </header>
 
+        <!-- Main content -->
         <main>
             <div class="lbox news  lbox-with-aside">
 
+                <!-- Notizie principali -->
                 <div class="lbox-main item-sequence item-sequence-col-1 teaser-bg">
                     <!-- 1 -->
                     <article class="teaser  teaser-wide teaser-wide-toptitle withimage image-orientation-landscape longtitle item-sequence-item ">
@@ -634,6 +642,53 @@
                      </article>
 
                 </div>
+
+                <!-- Notizie aside -->
+                <aside class="lbox-aside">
+                    <div class="lbox-aside-inner item-sequence sticky">
+
+                        <div class="widget  item-sequence-item ">
+                            <div class="widget-sbalzo">
+                                <div class="widget-content">
+                                    <h4 class="widget-header">
+                                        <a href="#">
+                                            <img src="https://placehold.co/248x140" width="400" height="225" alt="Immagine di esempio" />
+                                        </a>
+                                    </h4>
+                                    <div class="widget-body">
+                                        <div class="widget-occhiello">
+                                            /// Lorem ipsum
+                                        </div>
+                                        <div class="widget-title">
+                                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget  item-sequence-item ">
+                            <div class="widget-sbalzo">
+                                <div class="widget-content">
+                                    <h4 class="widget-header">
+                                        <a href="#">
+                                            <img src="https://placehold.co/248x140" width="400" height="225" alt="Immagine di esempio" />
+                                        </a>
+                                    </h4>
+                                    <div class="widget-body">
+                                        <div class="widget-occhiello">
+                                            /// Lorem ipsum
+                                        </div>
+                                        <div class="widget-title">
+                                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
 
             </div>
         </main>
