@@ -587,6 +587,111 @@ article {
     font-size: 13px;
 }
 
+/* Box articoli */
+.news-strip {
+    background-color: #333;
+}
+
+.news-strip.inverted {
+    background-color: var(--dark-bg);
+}
+
+.news-strip {
+    background-color: var(--light-bg);
+    margin-top: 0;
+}
+
+.news-strip.inverted .title H3.small-title {
+    color: var(--white);
+}
+
+H3.small-title {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    line-height: 1;
+}
+
+.teaser.teaser-vertical {
+    position: relative;
+}
+
+.teaser.teaser-vertical .teaser-content-wrapper {
+    width: 100%;
+    height: 0;
+    padding: 0 0 112% 0;
+    position: relative;
+}
+
+.teaser.teaser-vertical.withimage .teaser-content-wrapper .teaser-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.teaser.teaser-vertical.withimage .teaser-content-wrapper .teaser-text1 {
+    position: absolute;
+    top: 50%;
+}
+
+.teaser-image>.skew-title {
+    display: inline-block;
+    margin: 0;
+    background: var(--twilight-blue);
+    color: #fff;
+    -moz-transform: skew(-20deg,0deg);
+    -webkit-transform: skew(-20deg, 0deg);
+    -o-transform: skew(-20deg,0deg);
+    -ms-transform: skew(-20deg,0deg);
+    transform: skew(-20deg, 0deg);
+    line-height: 1;
+    font-size: 12px;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.teaser-image>.skew-title span, .teaser-image>.skew-title a, .teaser-image>.skew-title a:visited {
+    display: inline-block;
+    -moz-transform: skew(20deg,0deg);
+    -webkit-transform: skew(20deg, 0deg);
+    -o-transform: skew(20deg,0deg);
+    -ms-transform: skew(20deg,0deg);
+    transform: skew(20deg, 0deg);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: inherit;
+    line-height: 1;
+}
+
+.margin-bottom-default {
+    margin-bottom: var(--vmargin);
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+    height: auto;
+}
+
+.swiper-custom .swiper-slide {
+    height: 300px;
+    width: 250px;
+    padding: 0 30px 0 0;
+    position: relative;
+}
+
+
 /* Media Queries */
 @media (max-width: 576px) {
     .top-hmargins {
@@ -707,6 +812,28 @@ article {
         font-size: 24px;
         letter-spacing: 0;
     }
+
+    H3.small-title {
+        margin-bottom: 8px;
+    }
+
+    .teaser.teaser-vertical.withskewtitle .teaser-content-wrapper .teaser-text1 {
+        padding-top: 15px;
+    }
+
+    .teaser.teaser-normal .teaser-content-wrapper .teaser-text1, .teaser.teaser-large .teaser-content-wrapper .teaser-text1, .teaser.teaser-wide .teaser-content-wrapper .teaser-text1, .teaser.teaser-vertical-compact .teaser-content-wrapper .teaser-text1, .teaser.teaser-vertical .teaser-content-wrapper .teaser-text1 {
+        padding: 8px;
+    }
+
+    .teaser.teaser-vertical.longtitle .teaser-text H2 {
+        font-size: 16px;
+        letter-spacing: -0.3px;
+    }
+
+    .teaser.teaser-vertical .teaser-image .skew-title {
+        bottom: -12px;
+        left: 20px;
+    }
 }
 
 @media (min-width: 828px) {
@@ -819,6 +946,26 @@ article {
     .teaser.teaser-small .teaser-text H2 {
         font-size: 21px;
     }
+
+    /* Boxi articoli */
+    .teaser.teaser-vertical.withskewtitle .teaser-content-wrapper .teaser-text1 {
+        padding-top: 20px;
+    }
+
+    .teaser.teaser-vertical .teaser-content-wrapper .teaser-text1 {
+        padding: 15px;
+    }
+
+    .teaser.teaser-vertical.longtitle .teaser-text H2 {
+        font-size: 16px;
+        letter-spacing: -0.5px;
+    }
+
+    .teaser.teaser-vertical .teaser-image .skew-title {
+        bottom: -12px;
+        left: 20px;
+    }
+    
 }
 
 @media (min-width: 828px) and (max-width: 1110px) {
@@ -938,6 +1085,27 @@ article {
     .lbox .lbox-aside,
     .lbox .lbox-aside-inner {
         display: contents;
+    }
+
+    /* Boxi articoli */
+    .news-strip {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .news-strip .title {
+        margin-bottom: 8px;
+    }
+
+    H3.small-title {
+        padding: 0 8px;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .news-strip .swiper-custom {
+        height: 231px;
+        position: relative;
     }
 }
 
@@ -1067,4 +1235,21 @@ article {
         position: sticky;
         top: 63px;
     }
+
+    /* Boxi articoli */
+    .news-strip {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .news-strip .title {
+        margin-bottom: 15px;
+    }
+
+    H3.small-title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    
 }
