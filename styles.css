@@ -639,10 +639,10 @@ H3.small-title {
     margin: 0;
     background: var(--twilight-blue);
     color: #fff;
-    -moz-transform: skew(-20deg,0deg);
+    -moz-transform: skew(-20deg, 0deg);
     -webkit-transform: skew(-20deg, 0deg);
-    -o-transform: skew(-20deg,0deg);
-    -ms-transform: skew(-20deg,0deg);
+    -o-transform: skew(-20deg, 0deg);
+    -ms-transform: skew(-20deg, 0deg);
     transform: skew(-20deg, 0deg);
     line-height: 1;
     font-size: 12px;
@@ -651,12 +651,14 @@ H3.small-title {
     z-index: 2;
 }
 
-.teaser-image>.skew-title span, .teaser-image>.skew-title a, .teaser-image>.skew-title a:visited {
+.teaser-image>.skew-title span,
+.teaser-image>.skew-title a,
+.teaser-image>.skew-title a:visited {
     display: inline-block;
-    -moz-transform: skew(20deg,0deg);
+    -moz-transform: skew(20deg, 0deg);
     -webkit-transform: skew(20deg, 0deg);
-    -o-transform: skew(20deg,0deg);
-    -ms-transform: skew(20deg,0deg);
+    -o-transform: skew(20deg, 0deg);
+    -ms-transform: skew(20deg, 0deg);
     transform: skew(20deg, 0deg);
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
@@ -680,7 +682,8 @@ H3.small-title {
     z-index: 1;
 }
 
-.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
     height: auto;
 }
 
@@ -821,7 +824,11 @@ H3.small-title {
         padding-top: 15px;
     }
 
-    .teaser.teaser-normal .teaser-content-wrapper .teaser-text1, .teaser.teaser-large .teaser-content-wrapper .teaser-text1, .teaser.teaser-wide .teaser-content-wrapper .teaser-text1, .teaser.teaser-vertical-compact .teaser-content-wrapper .teaser-text1, .teaser.teaser-vertical .teaser-content-wrapper .teaser-text1 {
+    .teaser.teaser-normal .teaser-content-wrapper .teaser-text1,
+    .teaser.teaser-large .teaser-content-wrapper .teaser-text1,
+    .teaser.teaser-wide .teaser-content-wrapper .teaser-text1,
+    .teaser.teaser-vertical-compact .teaser-content-wrapper .teaser-text1,
+    .teaser.teaser-vertical .teaser-content-wrapper .teaser-text1 {
         padding: 8px;
     }
 
@@ -965,7 +972,7 @@ H3.small-title {
         bottom: -12px;
         left: 20px;
     }
-    
+
 }
 
 @media (min-width: 828px) and (max-width: 1110px) {
@@ -1251,5 +1258,5 @@ H3.small-title {
         margin-bottom: 15px;
     }
 
-    
+
 }
