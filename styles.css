@@ -973,6 +973,10 @@ H3.small-title {
     .hot-topics-slider swiper-slide {
         width: auto !important;
     }
+
+    .hot-topics-list {
+        display: none;
+    }
 }
 
 @media (min-width: 828px) {
@@ -1089,8 +1093,9 @@ H3.small-title {
         left: 20px;
     }
 
-    
-
+    .hot-topics-slider {
+        display: none;
+    }
 }
 
 @media (min-width: 828px) and (max-width: 1110px) {
@@ -1374,7 +1379,4 @@ H3.small-title {
         margin-bottom: 15px;
     }
 
-    .hot-topics-slider {
-        display: none;
-    }
 }
