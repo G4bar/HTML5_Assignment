@@ -776,7 +776,8 @@ H3.small-title {
     border-color: #073e7c;
 }
 
-.btn-sm, .btn-group-sm>.btn {
+.btn-sm,
+.btn-group-sm>.btn {
     padding: .25rem .5rem;
     font-size: .875rem;
     line-height: 1.5;
