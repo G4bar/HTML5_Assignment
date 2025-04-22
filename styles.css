@@ -407,6 +407,73 @@ a:visited:hover {
     color: white;
 }
 
+/* Stili aggiuntivi per hot-topics-slider */
+.hot-topics-slider {
+    text-align: center;
+    padding: 8px 0;
+    width: 100%;
+    display: flex;
+}
+
+.hot-topics-slider .hot-topics-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.hot-topics-slider .hot-topics-item a {
+    background-color: transparent;
+    color: #666;
+    padding: 3px 5px;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+    transform: none;
+    margin: 0 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+/* Manteniamo gli stili specifici per ogni item ID */
+.hot-topics-slider #item1 a {
+    background: #00723d;
+    color: white;
+}
+
+.hot-topics-slider #item1 a:hover {
+    background: white;
+    color: #00723d;
+}
+
+.hot-topics-slider #item3 a {
+    background: #293133;
+    color: white;
+}
+
+.hot-topics-slider #item3 a:hover {
+    background: white;
+    color: #293133;
+}
+
+.hot-topics-slider #item4 a {
+    background: var(--red);
+    color: white;
+}
+
+.hot-topics-slider #item4 a:hover {
+    background: white;
+    color: var(--red);
+}
+
+.hot-topics-slider #item2 a:hover,
+.hot-topics-slider #item5 a:hover,
+.hot-topics-slider #item6 a:hover {
+    background: #666;
+    color: white;
+}
+
 /* Teaser Components */
 .teaser {
     --theme-color: var(--twilight-blue);
@@ -841,6 +908,18 @@ H3.small-title {
         bottom: -12px;
         left: 20px;
     }
+
+    .hot-topics-list {
+        display: none;
+    }
+
+    .hot-topics-slider {
+        display: flex;
+    }
+
+    .hot-topics-slider swiper-slide {
+        width: auto !important;
+    }
 }
 
 @media (min-width: 828px) {
@@ -971,6 +1050,10 @@ H3.small-title {
     .teaser.teaser-vertical .teaser-image .skew-title {
         bottom: -12px;
         left: 20px;
+    }
+
+    .hot-topics-slider {
+        display: none;
     }
 
 }
@@ -1258,5 +1341,7 @@ H3.small-title {
         margin-bottom: 15px;
     }
 
-
+    .hot-topics-slider {
+        display: none;
+    }
 }
