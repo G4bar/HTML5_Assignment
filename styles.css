@@ -436,40 +436,39 @@ a:visited:hover {
     text-transform: uppercase;
 }
 
-/* Manteniamo gli stili specifici per ogni item ID */
-.hot-topics-slider #item1 a {
+#swp1 a {
     background: #00723d;
     color: white;
 }
 
-.hot-topics-slider #item1 a:hover {
+#swp1 a:hover {
     background: white;
     color: #00723d;
 }
 
-.hot-topics-slider #item3 a {
+#swp3 a {
     background: #293133;
     color: white;
 }
 
-.hot-topics-slider #item3 a:hover {
+#swp3 a:hover {
     background: white;
     color: #293133;
 }
 
-.hot-topics-slider #item4 a {
+#swp4 a {
     background: var(--red);
     color: white;
 }
 
-.hot-topics-slider #item4 a:hover {
+#swp4 a:hover {
     background: white;
     color: var(--red);
 }
 
-.hot-topics-slider #item2 a:hover,
-.hot-topics-slider #item5 a:hover,
-.hot-topics-slider #item6 a:hover {
+#swp2 a:hover,
+#swp5 a:hover,
+#swp6 a:hover {
     background: #666;
     color: white;
 }
